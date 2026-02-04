@@ -1,0 +1,15 @@
+[Unit]
+Description=SusiDrama Pakasir Webhook (gunicorn)
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/home/youruser/susidrama
+Environment="PATH=/home/youruser/susidrama/venv/bin"
+Environment="WEBHOOK_HOST=127.0.0.1"
+Environment="WEBHOOK_PORT=5000"
+ExecStart=/home/youruser/susidrama/venv/bin/gunicorn --workers 3 --bind 127.0.0.1:5000 pakasir_webhook:app
+
+[Install]
+WantedBy=multi-user.target

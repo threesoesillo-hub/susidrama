@@ -1,0 +1,83 @@
+# .gitignore untuk Susi Drama Bot
+
+# Environment variables
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environment
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Database backups
+backup_*.json
+*.db
+
+# Firebase credentials (sensitive)
+firebase_credentials.json
+
+# Temp files
+*.tmp
+temp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Django/Flask
+instance/
+.webassets-cache
+
+# Pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Coverage
+htmlcov/
+.coverage
+.coverage.*
+
+# Node (if using any Node tools)
+node_modules/
+npm-debug.log
